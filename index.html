@@ -13,56 +13,83 @@
   </head>
   <body>
     <div id="app">
-      <div class="dropdown">
-        <div class="dropdown-button">
-          <p class="dropdown-button__title">AGEBRE</p>
-          <span class="dropdown-button__icon"><i class="fa-solid fa-caret-down fa-2x"></i></span>
+      <main class="main">
+      <div class="actions">
+        <div class="dropdown">
+          <div class="dropdown-button">
+            <p class="dropdown-button__title">AGEBRE</p>
+            <span class="dropdown-button__icon"><i class="fa-solid fa-caret-down fa-2x"></i></span>
+          </div>
+          <div class="dropdown-menu">
+            <div class="dropdown-menu-container">
+              <ul>
+                <li data-option="first-option">
+                  <span>EDUCACIÓN BÁSICA REGULAR</span>
+                  <!-- <ul>
+                    <li>
+                      <span>Inicial</span>
+                      <ul>
+                        <li><span>Inicial</span></li>
+                        <li><span>Inicial EIB</span></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <span>Primaria</span>
+                      <ul>
+                        <li><span>Primaria Regular</span></li>
+                        <li><span>Primaria EIB amazónico</span></li>
+                        <li><span>Primaria EIB andino</span></li>
+                        <li><span>Primaria multigrado rural</span></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <span>Secundaria</span>
+                      <ul>
+                        <li><span>Secundaria regular</span></li>
+                        <li><span>Secundaria EIB amazónico</span></li>
+                        <li><span>Secundaria EIB andino</span></li>
+                        <li><span>Secundaria residencia, tutorial y alternancia</span></li>
+                      </ul>
+                    </li>
+                  </ul> -->
+                </li>
+                <li data-option="second-option">
+                  <span>EDUCACIÓN BÁSICA ESPECIAL</span>
+                  <!-- <ul>
+                    <li><span>PRITE</span></li>
+                    <li><span>CEBE</span></li>
+                  </ul> -->
+                </li>
+                <!-- <li style="background-color: #F1F7F9; border: #F1F7F9">
+  
+                </li> -->
+                <li data-option="three-option">
+                  <span>OTROS</span>
+                  <!-- <ul>
+                    <li><span>PRITE</span></li>
+                    <li><span>CEBE</span></li>
+                  </ul> -->
+                </li>
+              </ul>
+  
+            </div>
+          </div>
         </div>
-        <div class="dropdown-menu">
-          <div class="dropdown-menu-container">
-            <ul>
-              <li>
-                <span>BÁSICA REGULAR</span>
-                <ul>
-                  <li>
-                    <span>Inicial</span>
-                    <ul>
-                      <li><span>Inicial</span></li>
-                      <li><span>Inicial EIB</span></li>
-                    </ul>
-                  </li>
-                  <li>
-                    <span>Primaria</span>
-                    <ul>
-                      <li><span>Primaria Regular</span></li>
-                      <li><span>Primaria EIB amazónico</span></li>
-                      <li><span>Primaria EIB andino</span></li>
-                      <li><span>Primaria multigrado rural</span></li>
-                    </ul>
-                  </li>
-                  <li>
-                    <span>Secundaria</span>
-                    <ul>
-                      <li><span>Secundaria regular</span></li>
-                      <li><span>Secundaria EIB amazónico</span></li>
-                      <li><span>Secundaria EIB andino</span></li>
-                      <li><span>Secundaria residencia, tutorial y alternancia</span></li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <span>BÁSICA ESPECIAL</span>
-                <ul>
-                  <li><span>PRITE</span></li>
-                  <li><span>CEBE</span></li>
-                </ul>
-              </li>
-              <li style="background-color: #F1F7F9; border: #F1F7F9">
-
-              </li>
-            </ul>
-
+        <div class="options">
+          <div class="first-option">
+            <button class="option--active">INICIAL</button>
+            <button>PRIMARIA</button>
+            <button>SECUNDARIA</button>
+            <button>PROGRAMAS PEDAGÓGICOS</button>
+            <button>CONCURSOS</button>
+            <button>DOCUMENTOS</button>
+          </div>
+          <div class="second-option">
+            <button class="option--active">CEBE</button>
+            <button>PRITE</button>
+          </div>
+          <div class="three-option">
+            <button class="option--active">DOCUMENTOS</button>
           </div>
         </div>
       </div>
@@ -72,7 +99,7 @@
             <h1 class="banner__title">¡Bienvenidas y bienvenidos!<br/>al Área de Gestión de la Educación <br/>
                Básica Regular y Especial </h1>
             <div class="banner__content">
-              <p>
+              <!-- <p>
                 Descubre nuevas experiencias.<br />
                 En ellas encontrarás diversas situaciones y desafíos para afrontar.<br />
                 -"Experiencias de aprendizaje"<br />
@@ -81,15 +108,18 @@
                 -"Radio y TV"<br />
                 -"Aplicativos y recursos educativos"<br />
                 Cada una de las secciones contiene todo lo que necesitas para avanzar con tus aprendizajes.<br />
-              </p>
+              </p> -->
             </div>
           </div>
           <div class="banner__img">
-            <img src="https://aprendoencasa.pe/assets/primaria-amazonico.6d0e1ab2.png" alt="">
+            <img src="./banner__img.png"  alt="">
           </div>
         </div>
       </div>
+      
+    </main>
     </div>
+    
     <script type="module" src="./main.js"></script>
   </body>
 </html>
