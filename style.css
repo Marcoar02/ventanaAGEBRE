@@ -18,10 +18,11 @@ body{
 .l-container{
   max-width: 900px;
 }
-ul,li{
+ul,li,a{
   list-style: none;
   margin: 0;
   padding: 0;
+  text-decoration: none;
 }
 .dropdown{
   width: 90%;
@@ -55,7 +56,7 @@ ul,li{
   margin: 0;
 }
 .dropdown-button__icon{
-  color:#22afff;
+  color:#016299;
 }
 
 .dropdown-menu{
@@ -194,8 +195,8 @@ ul{
   border-bottom:3px solid #FFFFFF;
 }
 [class$="-option"] .option--active{
-  color : #22AFFF;
-  border-bottom:3px solid #22AFFF;
+  color : #016299;
+  border-bottom:3px solid #016299;
 }
 
 @media screen and (min-width:800px) {
@@ -227,6 +228,65 @@ ul{
 }
 
 .main{
-  width: min(90%,1200px);
+  width: min(90%,1170px);
   margin: 2em auto;
+}
+.results{
+  margin-bottom: 1em;
+}
+.result-container{
+  display: flex;
+  flex-wrap:wrap;
+  gap: 10px;
+  margin-left: 250px;
+  margin-bottom: 10px;
+}
+.result-container  .result{ 
+  background:#016299;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  border-radius: 10px;
+  color:white;
+}
+
+.result-container  .result:hover{
+  background:#00b3fa;
+}
+[data-result] {
+  display: none;
+}
+
+hr{
+  border: 0.3px solid #00b3fa;
+  border-radius: 0.5px;
+  margin-left: 250px;
+}
+
+.hover .result{
+  position: relative;
+  
+}
+
+.hover ul{
+  display:none;
+  flex-direction: column;
+  position:absolute;
+  top: calc(100%);
+  left:0;
+  width:100%;
+  background-color: #61C5FF;
+  border-radius: 5px;
+  z-index: 99;
+  height:fit-content;
+  padding:0.5em;
+  color:white;
+}
+.hover ul li,.hover ul li a{
+  color:white;
+}
+.hover .result:hover ul{
+  display:flex;
+}
+.dropdown-menu{
+  z-index:999;
 }

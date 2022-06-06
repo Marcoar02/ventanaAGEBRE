@@ -25,50 +25,9 @@
               <ul>
                 <li data-option="first-option">
                   <span>EDUCACIÓN BÁSICA REGULAR</span>
-                  <!-- <ul>
-                    <li>
-                      <span>Inicial</span>
-                      <ul>
-                        <li><span>Inicial</span></li>
-                        <li><span>Inicial EIB</span></li>
-                      </ul>
-                    </li>
-                    <li>
-                      <span>Primaria</span>
-                      <ul>
-                        <li><span>Primaria Regular</span></li>
-                        <li><span>Primaria EIB amazónico</span></li>
-                        <li><span>Primaria EIB andino</span></li>
-                        <li><span>Primaria multigrado rural</span></li>
-                      </ul>
-                    </li>
-                    <li>
-                      <span>Secundaria</span>
-                      <ul>
-                        <li><span>Secundaria regular</span></li>
-                        <li><span>Secundaria EIB amazónico</span></li>
-                        <li><span>Secundaria EIB andino</span></li>
-                        <li><span>Secundaria residencia, tutorial y alternancia</span></li>
-                      </ul>
-                    </li>
-                  </ul> -->
                 </li>
                 <li data-option="second-option">
                   <span>EDUCACIÓN BÁSICA ESPECIAL</span>
-                  <!-- <ul>
-                    <li><span>PRITE</span></li>
-                    <li><span>CEBE</span></li>
-                  </ul> -->
-                </li>
-                <!-- <li style="background-color: #F1F7F9; border: #F1F7F9">
-  
-                </li> -->
-                <li data-option="three-option">
-                  <span>OTROS</span>
-                  <!-- <ul>
-                    <li><span>PRITE</span></li>
-                    <li><span>CEBE</span></li>
-                  </ul> -->
                 </li>
               </ul>
   
@@ -77,19 +36,83 @@
         </div>
         <div class="options">
           <div class="first-option">
-            <button class="option--active">INICIAL</button>
-            <button>PRIMARIA</button>
-            <button>SECUNDARIA</button>
-            <button>PROGRAMAS PEDAGÓGICOS</button>
-            <button>CONCURSOS</button>
-            <button>DOCUMENTOS</button>
+            <button class="option--active" data-target="inicial">INICIAL</button>
+            <button data-target="primaria">PRIMARIA</button>
+            <button data-target="secundaria">SECUNDARIA</button>
           </div>
           <div class="second-option">
             <button class="option--active">CEBE</button>
             <button>PRITE</button>
           </div>
-          <div class="three-option">
-            <button class="option--active">DOCUMENTOS</button>
+        </div>
+      </div>
+      <div class="results-wrapper">
+        <div class="results" data-result="inicial">
+          <div class="result-container navigate">
+            <a href="https://www.ugel01.gob.pe/area-de-gestion-de-la-educacion-basica-regular-y-especial-documentos/" class="result" target="__blank">DOCUMENTOS</a>
+            <a href="#" class="result" target="__blank">PLAN LECTOR</a>
+            <a href="https://www.ugel01.gob.pe/documentos-generales/area-de-gestion-de-la-educacion-basica-regular-y-especial-familias-inicial/" class="result" target="__blank">FAMILIA</a>
+            <a href="https://www.ugel01.gob.pe/documentos-generales/agebre-ebr-inicial-kit-de-material-impreso-y-audios/" class="result" target="__blank">KIT DE MATERIAL IMPRESO Y AUDIOS</a>
+            <a href="https://www.ugel01.gob.pe/documentos-generales/agebre-ebr-inicial-implementacion-del-curriculo/" class="result" target="__blank">IMPLEMENTACIÓN DE CURRÍCULO</a>
+            <a href="https://www.ugel01.gob.pe/documentos-generales/agebre-ebr-inicial-material-de-gestion/" class="result" target="__blank">MATERIAL DE CAPACITACIÓN</a>
+          </div>
+        </div>
+        <div class="results" data-result="primaria">
+          <div class="result-container navigate">
+            <a href="https://www.ugel01.gob.pe/area-de-gestion-de-la-educacion-basica-regular-y-especial-documentos/" class="result" target="__blank">DOCUMENTOS</a>
+            <a href="#" class="result" target="__blank">PLAN LECTOR</a>
+            <a href="https://www.ugel01.gob.pe/documentos-generales/area-de-gestion-de-la-educacion-basica-regular-y-especial-familias-primaria/" class="result" target="__blank">FAMILIA</a>
+            <a href="https://www.ugel01.gob.pe/documentos-generales/agebre-ebr-tec-tic/" class="result" target="__blank">APLICANDO LAS TICS</a>
+            <a href="https://www.ugel01.gob.pe/documentos-generales/agebre-ebr-documentos-toe/" class="result" target="__blank">TOE</a>
+          </div>
+          <!-- <hr /> -->
+          <div class="result-container hover">
+            <div class="result">
+              <span>CONCURSOS</span>
+              <ul>
+                <li><a href="" target="__blank">JFEN</a></li>
+                <li><a href="" target="__blank">JDEN</a></li>
+                <li><a href="" target="__blank">ONEM</a></li>
+                <li><a href="" target="__blank">JMA</a></li>
+                <li><a href="" target="__blank">FenCyT</a></li>
+                <li><a href="" target="__blank">CREA Y EMPRENDE</a></li>
+              </ul>
+            </div>
+            <div class="result">
+              <span>CAPACITACIONES</span>
+              <ul>
+                <li>IMPLEMENTACIÓN CNEB</li>
+                <li>ORIENTACIONES A DOCENTES</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="results" data-result="secundaria">
+          <div class="result-container navigate">
+            <a href="https://www.ugel01.gob.pe/area-de-gestion-de-la-educacion-basica-regular-y-especial-documentos/" class="result" target="__blank">DOCUMENTOS</a>
+            <a href="#" class="result" target="__blank">PLAN LECTOR</a>
+            <a href="https://www.ugel01.gob.pe/documentos-generales/area-de-gestion-de-la-educacion-basica-regular-y-especial-familias-secundaria/" class="result" target="__blank">FAMILIA</a>
+            <a href="https://www.ugel01.gob.pe/documentos-generales/agebre-ebr-tec-tic/" class="result" target="__blank">APLICANDO LAS TICS</a>
+            <a href="https://www.ugel01.gob.pe/documentos-generales/agebre-ebr-documentos-toe/" class="result" target="__blank">TOE</a>
+          </div>
+          <hr />
+          <div class="result-container hover">
+            <div class="result">
+              <span>CONCURSOS</span>
+              <ul>
+                <li>JFEN</li>
+                <li>JDEN</li>
+                <li>FenCyT</li>
+                <li>JMA</li>
+              </ul>
+            </div>
+            <div class="result">
+              <span>CAPACITACIONES</span>
+              <ul>
+                <li>IMPLEMENTACIÓN CNEB</li>
+                <li>ORIENTACIONES A DOCENTES</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -99,16 +122,6 @@
             <h1 class="banner__title">¡Bienvenidas y bienvenidos!<br/>al Área de Gestión de la Educación <br/>
                Básica Regular y Especial </h1>
             <div class="banner__content">
-              <!-- <p>
-                Descubre nuevas experiencias.<br />
-                En ellas encontrarás diversas situaciones y desafíos para afrontar.<br />
-                -"Experiencias de aprendizaje"<br />
-                -"Seguimos Aprendiendo 2022"<br />
-                -"Aprendemos segundas lenguas"<br />
-                -"Radio y TV"<br />
-                -"Aplicativos y recursos educativos"<br />
-                Cada una de las secciones contiene todo lo que necesitas para avanzar con tus aprendizajes.<br />
-              </p> -->
             </div>
           </div>
           <div class="banner__img">
