@@ -13,7 +13,9 @@ body{
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  font-family: 'Varela', sans-serif;
+  font-family: "Gotham Rounded Medium", Helvetica, Arial, Verdana, Tahoma, sans-serif;
+  font-weight: 540;
+  line-height:35px;
 }
 .l-container{
   max-width: 900px;
@@ -54,6 +56,7 @@ ul,li,a{
 
 .dropdown-button__title{
   margin: 0;
+  line-height: 1.2em;
 }
 .dropdown-button__icon{
   color:#016299;
@@ -201,7 +204,7 @@ ul{
 
 @media screen and (min-width:800px) {
   .dropdown{
-    width: 230px;
+    width: 290px;
     margin: 0;
     /* margin: 1em 1em; */
   }
@@ -228,7 +231,7 @@ ul{
 }
 
 .main{
-  width: min(90%,1170px);
+  width: min(90%,1050px);
   margin: 2em auto;
 }
 .results{
@@ -238,14 +241,15 @@ ul{
   display: flex;
   flex-wrap:wrap;
   gap: 10px;
-  margin-left: 250px;
-  margin-bottom: 10px;
+  /* margin-left: 250px; */
+  /* margin-bottom: 10px; */
 }
-.result-container  .result{ 
+.result-container  .result{
+   
   background:#016299;
-  padding: 0.5em 1em;
+  padding: 0.3em 1em;
   text-decoration: none;
-  border-radius: 10px;
+  border-radius: 20px;
   color:white;
 }
 
@@ -254,6 +258,9 @@ ul{
 }
 [data-result] {
   display: none;
+  flex-wrap: wrap;
+  gap: 10px;
+  /* margin-left: 230px; */
 }
 
 hr{
@@ -266,13 +273,16 @@ hr{
   position: relative;
   
 }
+.result-container.hover{
+  display:inline-flex;
+}
 
 .hover ul{
   display:none;
   flex-direction: column;
   position:absolute;
-  top: calc(100%);
-  left:0;
+  top: 45px;
+  left:25px;
   width:100%;
   background-color: #61C5FF;
   border-radius: 5px;
@@ -289,4 +299,20 @@ hr{
 }
 .dropdown-menu{
   z-index:999;
+}
+
+footer{
+  margin-top:auto;
+  background-color: #393F48;
+  width: 100%;
+}
+footer img,header img{
+  display:block;
+  margin: 0 auto;
+}
+header > :first-child{
+  background-color: #393F48;
+}
+header > :last-child{
+  background-color: white;
 }

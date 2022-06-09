@@ -28,10 +28,12 @@ dropdownMenu?.addEventListener("click",(event)=>{
   dropdownMenu.classList.remove("dropdown-menu--active");
   if (li.dataset["option"] === "first-option"){
     firstOption.style.display = "flex";
-    document.querySelector("[data-result='inicial']").style.display="block";
+    dropdownButton.querySelector(".dropdown-button__title").innerText = "Educación Básica Regular"
+    document.querySelector("[data-result='inicial']").style.display="flex";
   }else if(li.dataset["option"] === "second-option"){
     secondOption.style.display = "flex";
-    document.querySelector("[data-result='inicial']").style.display="none";
+    dropdownButton.querySelector(".dropdown-button__title").innerText = "Educación Básica Especial"
+    document.querySelector("[data-result='cebe']").style.display="flex";
   }
 });
 
@@ -43,7 +45,7 @@ options.addEventListener("click",event=>{
   buttons.forEach(btn=>btn.classList.remove("option--active"));
   document.querySelectorAll("[data-result]").forEach(element=>element.style.display='none');
   button.classList.add("option--active");
-  document.querySelector(`[data-result='${button.dataset['target']}']`).style.display='block';
+  document.querySelector(`[data-result='${button.dataset['target']}']`).style.display='flex';
 })
 
 
