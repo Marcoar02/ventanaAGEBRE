@@ -4,12 +4,14 @@ const dropdownMenu = document.querySelector(".dropdown-menu");
 const firstOption = document.querySelector(".first-option");
 const secondOption = document.querySelector(".second-option");
 
+//Evento de desplegar menu
 dropdownButton.addEventListener("click",()=>{
   dropdownMenu.classList.toggle("dropdown-menu--active");
 });
 
 const options = document.querySelector(".options")
 
+//Evento de escoger una opción entre EBR Y EBE
 dropdownMenu?.addEventListener("click",(event)=>{
   const target = event.target;
   const li = target.closest("li");
@@ -17,10 +19,11 @@ dropdownMenu?.addEventListener("click",(event)=>{
   secondOption.style.display = "none";
   document.querySelectorAll("[data-result]").forEach(element=>element.style.display='none')
 
+  //Mostrando los botones para EBR
   let buttons = firstOption.querySelectorAll("button");
   buttons.forEach(btn=>btn.classList.remove("option--active"));
   buttons[0].classList.add("option--active")
-  
+  //Mostrando los botones para EBE
   buttons = secondOption.querySelectorAll("button");
   buttons.forEach(btn=>btn.classList.remove("option--active"));
   buttons[0].classList.add("option--active")
@@ -46,23 +49,4 @@ options.addEventListener("click",event=>{
   document.querySelectorAll("[data-result]").forEach(element=>element.style.display='none');
   button.classList.add("option--active");
   document.querySelector(`[data-result='${button.dataset['target']}']`).style.display='flex';
-})
-
-
-// firstOption?.addEventListener("click",event=> {
-//   const target = event.target;
-//   const button = target.closest("button");
-//   if(!button) return;
-//   const buttons = firstOption.querySelectorAll("button");
-//   buttons.forEach(btn=>btn.classList.remove("option--active"));
-//   button.classList.add("option--active");
-// });
-
-// secondOption?.addEventListener("click",event=> {
-//   const target = event.target;
-//   const button = target.closest("button");
-//   if(!button) return;
-//   const buttons = secondOption.querySelectorAll("button");
-//   buttons.forEach(btn=>btn.classList.remove("option--active"));
-//   button.classList.add("option--active");
-// })
+});

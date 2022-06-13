@@ -16,6 +16,7 @@ body{
   font-family: "Gotham Rounded Medium", Helvetica, Arial, Verdana, Tahoma, sans-serif;
   font-weight: 540;
   line-height:35px;
+  overflow-x: hidden;
 }
 .l-container{
   max-width: 900px;
@@ -46,6 +47,7 @@ ul,li,a{
   color: #294e9e;
   cursor: pointer;
   user-select: none;
+  gap: 1em;
   background-color: none;
   transition: all 0.3s;
 }
@@ -65,13 +67,15 @@ ul,li,a{
 .dropdown-menu{
   position: absolute;
   border-radius: 10px;
-  width: calc(100% + 60px);
+  width: calc(100%);
   height: 150px;
   top: calc(100% + 0.5em);
   border: 1px solid #ccc;
   background-color: #F3F6FB;
   overflow: hidden;
   display: none;
+  transform: translateX(-50%);
+  left: 50%;
 }
 .dropdown-menu-container{
   width: 100%;
@@ -193,7 +197,7 @@ ul{
   font-weight: bold;
   font-size: 1em;
   color:#ccc;
-  padding-top: 20px;
+  padding-top: 15px;
   padding-bottom: 10px;
   border-bottom:3px solid #FFFFFF;
 }
@@ -203,10 +207,25 @@ ul{
 }
 
 @media screen and (min-width:800px) {
+  .result-container{
+    justify-content: flex-start !important;
+    width: initial !important;
+  }
+  .result-container  .result{  
+    padding: 0.3em 1em !important;
+  }
+  .dropdown-menu {
+    transform: none;
+    left: 0;
+    width: calc(100% + 60px);
+  }
   .dropdown{
     width: 290px;
     margin: 0;
     /* margin: 1em 1em; */
+  }
+  .results-wrapper{
+    font-size: 1em !important;
   }
   .banner-container{
     width: 100%;
@@ -237,17 +256,23 @@ ul{
 .results{
   margin-bottom: 1em;
 }
+.results-wrapper{
+  margin-top: 1em;
+  font-size:1em;
+}
 .result-container{
   display: flex;
   flex-wrap:wrap;
   gap: 10px;
+  width: 100%;
+  justify-content: center;
   /* margin-left: 250px; */
   /* margin-bottom: 10px; */
 }
 .result-container  .result{
    
   background:#016299;
-  padding: 0.3em 1em;
+  padding: 0em 1em;
   text-decoration: none;
   border-radius: 20px;
   color:white;
@@ -309,6 +334,7 @@ footer{
 footer img,header img{
   display:block;
   margin: 0 auto;
+  max-width: 100%;
 }
 header > :first-child{
   background-color: #393F48;
